@@ -1,0 +1,2 @@
+/Users/ivanshu/Documents/urban strrets/android/app/.cxx/Debug/6w133zm6/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/ivanshu/Documents/urban strrets/android/app/.cxx/Debug/6w133zm6/arm64-v8a/CMakeFiles/rebuild_cache.dir
