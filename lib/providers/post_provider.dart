@@ -14,8 +14,8 @@ class PostProvider with ChangeNotifier {
   GetUserDataModel? _userProfile;
   List<Comment> _comments = [];
 
-  final Set<int> _likedPosts = {}; // Store liked post IDs
-  final Set<int> _checkedPosts = {}; // Store checked post IDs
+  final Set<int> _likedPosts = {}; 
+  final Set<int> _checkedPosts = {}; 
   bool _isLoading = false;
 
   List<GetUserPostsModel> get posts => _posts;
@@ -57,7 +57,7 @@ class PostProvider with ChangeNotifier {
   }
 
   Future<void> checkIfPostLiked(int userId, int postId) async {
-    if (_checkedPosts.contains(postId)) return; // Prevent multiple API calls
+    if (_checkedPosts.contains(postId)) return;
 
     bool liked =
         await _postRepository.checkIfPostLiked(userId: userId, postId: postId);
@@ -66,7 +66,7 @@ class PostProvider with ChangeNotifier {
     } else {
       _likedPosts.remove(postId);
     }
-    _checkedPosts.add(postId); // Mark this post as checked
+    _checkedPosts.add(postId);
     notifyListeners();
   }
 
