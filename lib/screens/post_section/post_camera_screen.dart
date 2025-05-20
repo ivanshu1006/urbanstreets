@@ -98,10 +98,10 @@ class BusinessPostCameraScreen extends StatelessWidget {
                       thickness: 1,
                     ),
                   ),
-                  // Row of icons, adjusted with padding to move them below the line
+                  
                   Padding(
                     padding: EdgeInsets.only(
-                        top: 25.h), // Adjust this value as needed
+                        top: 25.h),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
